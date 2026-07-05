@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You 💖</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- 💖 MUSIC -->
+<audio id="music" loop>
+  <source src="source.mp3">
+</audio>
+
+<!-- 💖 HEART BORDER -->
+<div id="borders"></div>
+
+<!-- 🟣 PAGE 1 -->
+<div id="page1" class="page active">
+    <h1>Haiiiiiiiiiii Sumaaaaaa 💖</h1>
+    <p>A surprise for u :>3</p>
+
+    <input type="password" id="pass" placeholder="Enter password">
+    <br><br>
+    <button onclick="check()">Unlock 💌</button>
+    <p id="msg"></p>
+</div>
+
+<!-- 🟣 PAGE 2 -->
+<div id="page2" class="page">
+    <h2 id="typing"></h2>
+    <button onclick="goCandle()">Next 🕯️</button>
+</div>
+
+<!-- 🟣 PAGE 3 -->
+<div id="page3" class="page">
+   <h2>Make a wish ✨<br><br>👉 Tap the candle to blow 🕯️</h2>
+    <div id="candle" onclick="blow()">🕯️</div>
+</div>
+
+<!-- 🟣 PAGE 4 -->
+<div id="page4" class="page">
+    <div class="album" onclick="nextPhoto()">
+        <h2 id="albumTitle">Memories 💖</h2>
+        <img id="albumImg" src="" />
+    </div>
+</div>
+
+<!-- 🟣 PAGE 5 -->
+<div id="page5" class="page">
+    <div class="frame" id="frame"></div>
+    <button onclick="goFinal()">Next ➡️</button>
+</div>
+
+<!-- 🟣 PAGE 6 FINAL -->
+<div id="page6" class="page">
+    <h2 id="finalMsg"></h2>
+    <button onclick="celebrate()">Celebrate 🎉</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
